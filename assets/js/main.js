@@ -36,52 +36,34 @@ $(function () {
   }
 
   // HANDLERS
-  menu.hover(
-    () => {
-      menu.addClass("menu--expanded");
+  menu.click(() => {
+    menu.toggleClass("menu--expanded");
 
-      // Logo Name
-      menuLogoName.addClass("menu__logo-name--expanded");
-      menuLogoName.empty();
-      typeNameAnimation("Henry Shi Jia Nguyen", 0);
-
-      // Logo Role
-      menuLogoRole.addClass("menu__logo-role--expanded");
-      menuLogoIcons.addClass("menu__logo-icons--expanded");
-
-      // Navigation Link
-      navigationLink.addClass("navigation__link--expanded");
-      navigationLinkText.addClass("navigation__link-text--expanded");
-
-      // External Link
-      linksItem.addClass("links__item--expanded");
-      linksItemText.addClass("links__item-text--expanded");
-
-      body.addClass("expanded");
-    },
-    () => {
-      menu.removeClass("menu--expanded");
-
-      // Logo Name
-      menuLogoName.removeClass("menu__logo-name--expanded");
-      menuLogoName.empty();
-      typeNameAnimation("HN.", 0);
-
-      // Logo Role
-      menuLogoRole.removeClass("menu__logo-role--expanded");
-      menuLogoIcons.removeClass("menu__logo-icons--expanded");
-
-      // Navigation Link
-      navigationLink.removeClass("navigation__link--expanded");
-      navigationLinkText.removeClass("navigation__link-text--expanded");
-
-      // External Link
-      linksItem.removeClass("links__item--expanded");
-      linksItemText.removeClass("links__item-text--expanded");
-
-      body.removeClass("expanded");
+    // Logo Name
+    menuLogoName.toggleClass("menu__logo-name--expanded");
+    var updateText;
+    if (menuLogoName.text() == "HN.") {
+      updateText = "Henry Shi Jia Nguyen";
+    } else {
+      updateText = "HN.";
     }
-  );
+    menuLogoName.empty();
+    typeNameAnimation(updateText, 0);
+
+    // Logo Role
+    menuLogoRole.toggleClass("menu__logo-role--expanded");
+    menuLogoIcons.toggleClass("menu__logo-icons--expanded");
+
+    // Navigation Link
+    navigationLink.toggleClass("navigation__link--expanded");
+    navigationLinkText.toggleClass("navigation__link-text--expanded");
+
+    // External Link
+    linksItem.toggleClass("links__item--expanded");
+    linksItemText.toggleClass("links__item-text--expanded");
+
+    body.toggleClass("expanded");
+  });
 
   onLoad();
 });
