@@ -42,7 +42,7 @@ $(function () {
     // Logo Name
     menuLogoName.toggleClass("menu__logo-name--expanded");
     var updateText;
-    if (menuLogoName.text() == "HN.") {
+    if (menuLogoName.hasClass("menu__logo-name--expanded")) {
       updateText = "Henry Shi Jia Nguyen";
     } else {
       updateText = "HN.";
