@@ -1,0 +1,23 @@
+@import "./vars";
+
+body {
+  margin: 0;
+  background-color: $color-eerie-black;
+  color: $color-white;
+  -moz-transition: padding-left $transition-speed;
+  -ms-transition: padding-left $transition-speed;
+  -o-transition: padding-left $transition-speed;
+  -webkit-transition: padding-left $transition-speed;
+  transition: padding-left $transition-speed;
+  padding-left: 7rem;
+  font-family: $font-text;
+}
+
+.expanded {
+  -moz-transition: padding-left $transition-speed;
+  -ms-transition: padding-left $transition-speed;
+  -o-transition: padding-left $transition-speed;
+  -webkit-transition: padding-left $transition-speed;
+  transition: padding-left $transition-speed;
+  padding-left: 15rem;
+}

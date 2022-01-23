@@ -1,6 +1,15 @@
 - name: Home
   link: /
+  icon: home
 - name: About
   link: /about
-- name: Blog
-  link: /blog
+  icon: person
+- name: Skills
+  link: /skills
+  icon: integration_instructions
+- name: Portfolio
+  link: /portfolio
+  icon: work_outline
+- name: Contact
+  link: /contact
+  icon: call

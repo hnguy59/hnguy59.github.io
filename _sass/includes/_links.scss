@@ -1,15 +1,15 @@
 @import "./vars";
 
-.navigation {
+.links {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  span {
+  i {
     font-size: 32px;
   }
 
-  &__link {
+  &__item {
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -54,10 +54,6 @@
 
     &:hover {
       color: $color-fluorescent-blue;
-    }
-
-    &--active {
-      color: $color-american-rose;
     }
 
     &--expanded {

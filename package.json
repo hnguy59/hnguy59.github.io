@@ -1,6 +1,7 @@
 {
     "scripts": {
-        "build": "bundle exec jekyll build",
-        "watch": "bundle exec jekyll serve"
+        "build": "npm run clean && bundle exec jekyll build",
+        "watch": "bundle exec jekyll serve",
+        "clean": "rmdir /s _site"
     }
 }

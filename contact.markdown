@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Henry Nguyen | Graduate Developer
-permalink: /about
+permalink: /contact
 ---
 
-<h1>ABOUT</h1>
+<h1>CONTACT</h1>

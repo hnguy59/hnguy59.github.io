@@ -1,0 +1,8 @@
+<div class="links">
+  {% for item in site.data.profiles %}
+  <a class="links__item" href="{{ item.url }}" target="_blank">
+    {{ item.icon| raw }}
+    <p class="links__item-text">{{ item.name }}</p>
+  </a>
+  {% endfor %}
+</div>

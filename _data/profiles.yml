@@ -1,0 +1,6 @@
+- name: Github
+  url: https://github.com/hnguy59
+  icon: <i class="fab fa-github"></i>
+- name: LinkedIn
+  url: https://www.linkedin.com/in/henry-nguyen-1a5980191/
+  icon: <i class="fab fa-linkedin"></i>
