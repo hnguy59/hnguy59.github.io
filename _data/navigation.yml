@@ -1,6 +1,3 @@
-- name: Home
-  link: /
-  icon: home
 - name: About
   link: /about
   icon: person
@@ -12,4 +9,4 @@
   icon: work_outline
 - name: Contact
   link: /contact
-  icon: call
+  icon: email

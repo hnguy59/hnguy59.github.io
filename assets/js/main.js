@@ -8,6 +8,7 @@ $(function () {
   var menuLogoIcons = menuLogo.find(".menu__logo-icons");
   var menuNavigationn = menu.find(".menu__navigation");
   var menuLinks = menu.find(".menu__links");
+  var menuArrow = menu.find(".menu__arrow");
 
   var navigation = menu.find(".navigation");
   var navigationLink = navigation.find(".navigation__link");
@@ -62,6 +63,8 @@ $(function () {
     linksItem.toggleClass("links__item--expanded");
     linksItemText.toggleClass("links__item-text--expanded");
 
+    // Arrow
+    menuArrow.toggleClass("menu__arrow--expanded");
     body.toggleClass("expanded");
   });
 

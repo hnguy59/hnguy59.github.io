@@ -11,7 +11,7 @@
   bottom: 0;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+  margin: 1px;
   padding: 5rem 1rem;
   background-color: $color-eerie-black-v2;
   -moz-transition: width $transition-speed;
@@ -24,6 +24,8 @@
     display: flex;
     flex-direction: column;
     height: 5%;
+    text-decoration: none;
+    color: $color-white;
 
     &-name {
       font-size: 64px;
@@ -58,6 +60,14 @@
         }
       }
     }
+
+    &:hover {
+      color: $color-fluorescent-blue;
+    }
+
+    &--active {
+      color: $color-platinum;
+    }
   }
 
   &__navigation {
@@ -75,5 +85,51 @@
     -webkit-transition: width $transition-speed;
     transition: width $transition-speed;
     width: 13rem;
+
+    // margin: 0;
+  }
+
+  &__arrow {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%) rotate(-90deg);
+    width: 24px;
+    height: 24px;
+
+    -moz-transition: transform $transition-speed;
+    -ms-transition: transform $transition-speed;
+    -o-transition: transform $transition-speed;
+    -webkit-transition: transform $transition-speed;
+    transition: transform $transition-speed;
+
+    span {
+      border-radius: 100%;
+      color: $color-black;
+      background-color: $color-white;
+    }
+
+    &--expanded {
+      transform: rotate(90deg) translate(-50%, -50%);
+
+      -moz-transition: transform $transition-speed;
+      -ms-transition: transform $transition-speed;
+      -o-transition: transform $transition-speed;
+      -webkit-transition: transform $transition-speed;
+      transition: transform $transition-speed;
+    }
+  }
+
+  &:hover {
+    margin: 0;
+    border: 1px solid $color-platinum;
+
+    .menu__arrow {
+      display: block;
+      cursor: pointer;
+      span {
+      }
+    }
   }
 }

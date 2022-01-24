@@ -1,13 +1,19 @@
 <div class="menu">
-  <div class="menu__logo">
-    <div class="menu__logo-name">HN.</div>
-    <div class="menu__logo-role">Web Developer</div>
+  <a
+    class="menu__logo {% if page.url == '/' %}menu__logo--active{% endif %}"
+    href="/"
+  >
+    <div class="menu__logo-name">HN.{{ site.data.data.initials }}</div>
+    <div class="menu__logo-role">Graduate Developer</div>
     <div class="menu__logo-icons">
       <span class="material-icons">desktop_windows</span>
       <span class="material-icons">code</span>
       <span class="material-icons">public</span>
     </div>
-  </div>
+  </a>
   <div class="menu__navigation">{% include navigation.html %}</div>
   <div class="menu__links">{% include links.html %}</div>
+  <div class="menu__arrow">
+    <span class="material-icons"> expand_more </span>
+  </div>
 </div>

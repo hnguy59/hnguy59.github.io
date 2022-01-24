@@ -1,5 +1,9 @@
 @import "./vars";
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   background-color: $color-eerie-black;
@@ -11,6 +15,7 @@ body {
   transition: padding-left $transition-speed;
   padding-left: 7rem;
   font-family: $font-text;
+  height: 100%;
 }
 
 .expanded {
@@ -20,4 +25,10 @@ body {
   -webkit-transition: padding-left $transition-speed;
   transition: padding-left $transition-speed;
   padding-left: 15rem;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
 }

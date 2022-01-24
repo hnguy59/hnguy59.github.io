@@ -1,0 +1,54 @@
+@import "./vars";
+
+.home {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  padding: 0 50px;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 50%;
+
+    &-title {
+      font-size: 100px;
+      line-height: 100px;
+      margin: 0 0 30px 0;
+    }
+
+    &-position {
+      color: $color-philippine-gray;
+      font-size: 30px;
+    }
+    &-contact-button {
+      width: fit-content;
+      background-color: transparent;
+      color: $color-fluorescent-blue;
+      border: 1px solid $color-fluorescent-blue;
+      border-radius: 5px;
+      padding: 15px 50px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $color-fluorescent-blue;
+        color: $color-black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__image {
+    border-radius: 100%;
+    &-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+    }
+  }
+}
